@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="W3 Demo - Multiple Pages">
+
+    <title>W3 | TheLastOfUs</title>
+
+    <!--IN-DOCUMENT CSS BELOW-->
+    <style>
+        /*we are now writing CSS in this element*/
+        
+        /*selecting elements by their tag type*/
+        body {
+            /*property: value*/
+            background-color:grey;
+            background-image: url("images/zinc-5898-in-architextures.jpg");
+            
+        }
+
+        div {
+            /*these style changes will apply to ALL divs in the page! when selecting by tag type, all tags of that type are affected*/
+            /*border:1px solid black;*/
+
+            /*padding adds space between content and border*/
+            padding:10px; /*applies to all 4 sides: top, right, bottom, left*/
+
+            /*margin adds space between border and other elements*/
+            margin:10px;/*applies to all 4 sides: top, right, bottom, left*/
+
+            box-shadow:5px 5px 5px black;
+
+        }
+
+        /*selecting an element by its #ID!*/
+        #wrapper {
+            width:980px;
+            margin:auto; /*auto equal left and right space when width is applied*/
+
+            background-color:rgb(41, 41, 41);
+            color:white; /*color changes FONT color!*/
+        }
+
+        #header {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            font-size:50px;
+        }
+
+        #footer {
+            text-align:center;
+            font-size:10px;
+        }
+        #special {
+            color:red;
+            text-decoration:none;
+        }
+
+        #buttons {
+            width:75%;
+            border:1px soild white;
+            height:53px;
+            margin:auto;
+            border:none;
+            box-shadow:none;
+
+        }
+
+        /*selecting a group by their .CLASS name*/
+        .border {
+            border:1px solid red;
+        }
+
+        .link {
+            width:160px;
+            height:50px;
+            line-height:50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration:none;
+            text-align: center;
+            display:block;
+            float:left;
+            margin-right:13px;
+            color:red;
+            font-size:36px;
+            border:1px solid rgb(41, 41, 41);
+            
+        }
+
+        .link:hover {
+            border:1px solid red;
+            background-color:white;
+            color:red;
+        }
+
+        
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- #wrapper div to "wrap around" all content of the page-->
+    <div id="wrapper">
+
+        <!--#HEADER-->
+        <div id="header" class="border fancy">
+            <h1 id="title"><b>THE LAST OF US</b></h1>
+        </div><!--/#header-->
+
+        <!--#NAV-->
+        <div id="nav">
+
+            <div id="buttons"><!--this div helps center the buttons-->
+
+                <!--use relative link paths for pages inside of your site-->
+                <a href="index.html" class="link">HOME</a>
+                <a href="about.html" class="link">ABOUT</a>
+                <a href="people.html" class="link">PEOPLE</a>
+                <a href="places.html" class="link">PLACES</a>
+
+        </div><!--/#buttons-->
+
+        </div><!--/#nav-->
+
+        <!--#CONTENT-->
+        <div id="content">
+            <h2>Home Page</h2>
+
+            <!--relative image paths: these are image files that live in our site's root folder; safest option-->
+            <img src="images/showPoster.jpg" alt="HBO's official show poster for Season 1 of 'The Last of Us'" style="width:100%;">
+
+        </div><!--/#content-->
+
+        <!--#FOOTER-->
+        <div id="footer" class="border">
+            <a href="#wrapper" id="special">Back to Top</a>
+            <p>&copy; K TRUCHON | SE111.05 | Spring 2025</p>
+        </div><!--/#footer-->
+    </div><!--/ #wrapper-->
+
+
+</body>
+</html>
