@@ -45,7 +45,7 @@
         }
 
         #header {
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
             text-shadow: 2px 2px 5px black;
             text-align: center;
             font-size:50px;
@@ -60,6 +60,10 @@
             text-decoration:none;
         }
 
+        #nav {
+            border:1px solid white;
+        }
+
         #buttons {
             width:75%;
             border:1px soild white;
@@ -67,6 +71,8 @@
             margin:auto;
             border:none;
             box-shadow:none;
+
+            border:1px solid red;
 
         }
 
@@ -97,6 +103,10 @@
             color:red;
         }
 
+        .fancy {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
         
 
     </style>
@@ -116,15 +126,16 @@
         <!--#NAV-->
         <div id="nav">
 
-            <div id="buttons"><!--this div helps center the buttons-->
+            <div id="buttons" style="width:75%;border:1px soild white;height:53px; margin:auto;
+border:none;box-shadow:none; border:1px solid red;"><!--this div helps center the buttons-->
 
                 <!--use relative link paths for pages inside of your site-->
-                <a href="index.html" class="link">HOME</a>
+                <a href="index.html" class="link" >HOME</a>
                 <a href="about.html" class="link">ABOUT</a>
                 <a href="people.html" class="link">PEOPLE</a>
                 <a href="places.html" class="link">PLACES</a>
 
-        </div><!--/#buttons-->
+            </div><!--/#buttons-->
 
         </div><!--/#nav-->
 
