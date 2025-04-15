@@ -11,6 +11,77 @@
 
     <!--IN DOCUMENT CSS - helps check the mainframe wireframe-->
     <style>
+
+        body {
+            background-color:rgb(73, 73, 73);
+            background-image: url('images/records.jpg');
+        }
+
+        #wrapper {
+            background-color:white;
+            
+            color:black;
+
+            width:980px;
+            margin:auto; /*adds equal space to left and right of element, MUST have a width specified first!*/
+
+            padding:10px; /*adds 10px of space between content & border on all four sides: top, rock, bottom, left*/
+
+        }
+
+        #nav {
+            border:2px solid rgb(240, 252, 3);
+            padding:10px;
+            margin:10px;
+
+            border-radius: 100px;
+
+            box-shadow:5px 5px 5px black;
+
+        }
+
+        #buttons {
+            /*border:1px solid rgb(252, 152, 3);*/
+            height:50px;
+
+            width:510px;
+            margin:auto;
+        }
+
+        .nav-btn {
+            width:150px;
+            height:50px;
+
+            text-align: center; /*x-axis alignment*/
+            line-height:50px; /*y-axis alignment, MUST match height value if vertically centering*/
+
+            background-color:grey;
+
+            float:left;
+            display:block;
+
+            margin-right:10px;
+            margin-left:10px;
+
+            text-decoration:none;
+
+            font-size:24px;
+
+            font-family:Arial, Helvetica, sans-serif
+
+        }
+
+        .nav-btn:hover {
+            background-color:blue;
+            color:white;
+
+            font-style:bold;
+
+            background-image: url('images/vinyl.jpg');
+        }
+
+
+        /*
         div {
             border:1px solid rgb(1, 204, 1);
             padding:10px;
@@ -23,7 +94,7 @@
 
         #main-content {
             margin:0;
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -43,10 +114,14 @@
         <!--NAV-->
         <div id="nav">
 
-            <!--RELATIVE links to all 3 site pages-->
-            <a href="index.html" class="nav-btn">HOME</a>
-            <a href="cast.html" class="nav-btn">CAST</a>
-            <a href="review.html" class="nav-btn">REVIEW</a>
+            <div id="buttons">
+
+                <!--RELATIVE links to all 3 site pages-->
+                <a href="index.html" class="nav-btn">HOME</a>
+                <a href="cast.html" class="nav-btn">CAST</a>
+                <a href="review.html" class="nav-btn">REVIEW</a>
+            
+            </div><!--/ #buttons-->
 
         </div><!--/ #nav-->
 
@@ -61,7 +136,7 @@
 
                 <p>A <i>brief</i> (1-2 sentence) summary of your <em>media choice.</em></p>
 
-                <img src="images/poster.jpg" alt="The official poster for Empire Records (1995)" style="width:90%">
+                <!--<img src="images/poster.jpg" alt="The official poster for Empire Records (1995)" style="width:90%">-->
 
                 <div class="info">
 
