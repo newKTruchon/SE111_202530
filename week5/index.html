@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5D1 | Tables & Forms</title>
+
+    <style>
+        table {
+            border:1px solid blue;
+        }
+
+        td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>W5D1 | Tables & Forms</h1>
+    <table>
+        <thead>
+          <tr>
+            <td>Month</td><td>Savings</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>$120</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$300</td>
+          </tr>
+        </tfoot>
+    </table>
+
+    <br><br><br><br><br>
+
+    <h2>Form w/o Table</h2>
+    <form>
+        <label for="username">Name</label>
+        <input type="text" name="username" id="first" placeholder="User Name" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="last" placeholder="Password" required>
+    </form>
+
+    <br><br>
+
+    <h2>Form w/ Table</h2>
+
+    <form method="GET" action="">
+        <table>
+
+            <tbody>
+
+                <!--1 tr = 1 row - reusable-->
+                <tr>
+                    <td><b>Label</b></td>
+                    <td><b>Field</b></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="username">Name</label>
+                    </td>
+
+                    <td><input type="text" name="username" id="username" placeholder="User Name" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="last">Last Name</label>
+                    </td>
+
+                    <td><input type="text" name="last" id="last" placeholder="Last Name" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+
+                    <td><input type="password" name="password" id="password" placeholder="password" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        
+                    </td>
+
+                    <td><input type="submit" value="SUBMIT :]"></td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+    </form>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
